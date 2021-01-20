@@ -1,0 +1,47 @@
+.details {
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    @include mediaQuery(1000px) {
+        grid-template-columns: 1fr;
+    }
+    &__left-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.card-details {
+    @include card(auto, auto);
+    padding: 20px;
+    background-color: white;
+    @include mediaQuery(1000px) {
+        max-width: 600px;
+    }
+    &__title {
+        margin: 10px 0;
+        font-family: $font-primary;
+        font-size: $font-size-title;
+        font-weight: bold;
+        color: $color-secondary;
+    }
+    &__subtitle {
+        margin: 10px 0;
+        font-family: $font-primary;
+        font-size: $font-size-paragraph;
+        font-weight: bold;
+        color: $color-secondary;
+    }
+    &__description {
+        margin: 10px 0;
+        font-family: $font-secondary;
+        font-size: $font-size-paragraph;
+        color: $color-secondary;
+        text-align: justify;
+        line-height: 1.2;
+    }
+    &__link {
+        color: $color-primary;
+    }
+}

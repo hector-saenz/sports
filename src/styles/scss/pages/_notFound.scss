@@ -1,0 +1,15 @@
+.notFound {
+    margin: 40px auto;
+    &__title {
+        margin: 20px 0;
+        font-family: $font-primary;
+        font-size: 40px;
+        color: $color-primary;
+        text-align: center;
+    }
+    &__message {
+        font-family: $font-secondary;
+        font-size: $font-size-paragraph;
+        text-align: center;
+    }
+}

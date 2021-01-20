@@ -1,0 +1,21 @@
+.card {
+    @include card(100px, 200px);
+    @include mediaQuery(600px) {
+        @include card(80px, auto)
+    }
+    &__title {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #00000050;
+        font-family: $font-primary;
+        font-size: $font-size-title;
+        font-weight: bold;
+    }
+    &__title-link {
+        text-decoration: none;
+        color: white;
+    }
+}

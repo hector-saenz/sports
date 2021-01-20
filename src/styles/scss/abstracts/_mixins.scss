@@ -1,0 +1,18 @@
+@mixin card($height, $width) {
+    height: $height;
+    width: $width;
+    // max-height: $max-height;
+    // max-width: $max-width;
+    // min-height: 50px;
+    // min-width: 100px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 0 20px -10px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0 0 20px -10px rgba(0,0,0,0.75);
+    box-shadow: 0 0 20px -10px rgba(97, 74, 74, 0.75);
+}
+
+@mixin mediaQuery($max-width) {
+    @media screen and (max-width: $max-width) {
+        @content
+    }
+}

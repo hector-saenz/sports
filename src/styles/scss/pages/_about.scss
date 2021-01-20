@@ -1,0 +1,35 @@
+.about {
+    margin: 40px auto;
+    &__title {
+        margin: 20px 0;
+        font-family: $font-primary;
+        font-size: $font-size-title;
+        font-weight: bold;
+    }
+    &__content-wrapper {
+        max-width: 50%;
+        @include mediaQuery(700px) {
+            max-width: 100%;
+        }
+    }
+    &__message {
+        font-family: $font-secondary;
+        font-size: $font-size-paragraph;
+        line-height: 1.2;
+        text-align: justify;
+    }
+    &__message-link {
+        font-family: $font-secondary;
+        font-size: $font-size-paragraph;
+        color: $color-primary;
+        font-weight: bold;
+    }
+}
+
+strong {
+    font-weight: bold;
+}
+
+i {
+    font-style: italic;
+}

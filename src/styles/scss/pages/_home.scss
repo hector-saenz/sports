@@ -1,0 +1,124 @@
+.home {
+    &__title {
+        margin: 20px 0;
+        display: block;
+        font-family: $font-primary;
+        font-size: 30px;
+        font-weight: bold;
+        text-align: center;
+    }
+    &__all {
+        margin: 50px auto;
+        max-width: 700px;
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: 40px repeat(3, 1fr) 40px;
+        grid-template-rows: repeat(4, 1fr);
+        @include mediaQuery(600px) {
+            grid-template-columns: repeat(2, minmax(100px, 1fr));
+            grid-gap: 5px;
+        }
+    }
+}
+
+.card:nth-child(1) {
+    grid-column-start: 2;
+    background-image: url('../../images/england.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    @include mediaQuery(600px) {
+        grid-column-start: auto;
+    }
+}
+
+.card:nth-child(2) {
+    grid-column-start: 1 / span 2;
+    grid-row-start: 2;
+    background-image: url('../../images/brazil.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    @include mediaQuery(600px) {
+        grid-column-start: auto;
+    }
+}
+
+.card:nth-child(3) {
+    grid-column-start: 1 / span 2;
+    grid-row-start: 3;
+    background-image: url('../../images/spain.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    @include mediaQuery(600px) {
+        grid-column-start: auto;
+    }
+}
+
+.card:nth-child(4) {
+    grid-column-start: 2;
+    grid-row-start: 4;
+    background-image: url('../../images/portugal.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    @include mediaQuery(600px) {
+        grid-column-start: auto;
+    }
+}
+
+.card:nth-child(5) {
+    grid-column-start: 4;
+    justify-self: end;
+    background-image: url('../../images/mexico.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    @include mediaQuery(600px) {
+        justify-self: normal;
+        grid-column-start: auto;
+    }
+}
+
+.card:nth-child(6) {
+    grid-column-start: 5;
+    grid-row-start: 2;
+    justify-self: end;
+    background-image: url('../../images/germany.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    @include mediaQuery(600px) {
+        justify-self: normal;
+        grid-column-start: auto;
+    }
+}
+
+.card:nth-child(7) {
+    grid-column-start: 5;
+    grid-row-start: 3;
+    justify-self: end;
+    background-image: url('../../images/france.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    @include mediaQuery(600px) {
+        justify-self: normal;
+        grid-column-start: auto;
+    }
+}
+
+.card:nth-child(8) {
+    grid-column-start: 4;
+    grid-row-start: 4;
+    justify-self: end;
+    background-image: url('../../images/italy.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    @include mediaQuery(600px) {
+        justify-self: normal;
+        grid-column-start: auto;
+    }
+}

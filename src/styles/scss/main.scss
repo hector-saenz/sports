@@ -1,0 +1,18 @@
+@import 'base/reset';
+
+@import 'vendors/fonts';
+
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
+
+@import 'components/body';
+@import 'components/container';
+@import 'components/card';
+@import 'components/header';
+@import 'components/footer';
+
+@import 'pages/home';
+@import 'pages/about';
+@import 'pages/leagues';
+@import 'pages/leagueDetails';
+@import 'pages/notFound';
